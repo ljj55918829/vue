@@ -1,16 +1,30 @@
 <template>
     <div class="index">
-      这是主页面
-      <router-view/>
+      <headercom></headercom>
+      <div class="content">
+        <asidecom class="left"/>
+        <router-view class="right"/>
+      </div>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "index"
+import headercom from '@/components/index/headercom'
+import asidecom from '@/components/index/asidecom'
+import news from '@/components/index/news'
+import movies from '@/components/index/movies'
+import channel from '@/components/index/channel'
+  export default {
+      name: "index",
+      components:{
+        headercom,asidecom,news,movies,channel
     }
+  }
 </script>
 
 <style scoped>
-.index{width: 100%;height: 200px;background: #0d8ddb;}
+.index{}
+.content{height: auto;overflow: hidden;}
+  .left{float:left;}
+  .right{float:left;padding: 50px 30px;box-sizing: border-box;}
 </style>
