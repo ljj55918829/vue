@@ -26,5 +26,5 @@ import channel from '@/components/index/channel'
 .index{}
 .content{height: auto;overflow: hidden;}
   .left{float:left;}
-  .right{float:left;padding: 50px 30px;box-sizing: border-box;}
+  .right{float:left;padding: 50px 30px;box-sizing: border-box;width: 84%;}
 </style>

@@ -16,8 +16,10 @@ export default new Router({
       component: login
     },{
       path: '/index',
+      // redirect:'/index',
       name: 'index',
       component: index,
+      redirect:'/news',
       children:[
         {path: '/news',
           name: 'news',
